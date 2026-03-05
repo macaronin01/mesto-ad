@@ -55,6 +55,7 @@
                 minlength="2"
                 maxlength="40"
                 required
+                pattern="^[A-Za-zА-Яа-яЁё\s\-]+$"
                 data-error-message="Разрешены только латинские, кириллические буквы, знаки дефиса и пробелы"
               />
               <span class="popup__error" id="user-name-error"></span>
@@ -69,6 +70,8 @@
                 minlength="2"
                 maxlength="200"
                 required
+                pattern="^[A-Za-zА-Яа-яЁё\s\-]+$"
+                data-error-message="Разрешены только латинские, кириллические буквы, знаки дефиса и пробелы"
               />
               <span class="popup__error" id="user-description-error"></span>
             </label>
@@ -98,6 +101,7 @@
                 minlength="2"
                 maxlength="30"
                 required
+                pattern="^[A-Za-zА-Яа-яЁё\s\-]+$"
                 data-error-message="Разрешены только латинские, кириллические буквы, знаки дефиса и пробелы"
               />
               <span class="popup__error" id="place-name-error"></span>
@@ -111,7 +115,7 @@
                 placeholder="Ссылка на картинку"
                 required
               />
-              <span class="popup__error" id="place-link-error">Некорректная ссылка</span>
+              <span class="popup__error" id="place-link-error"></span>
             </label>
             <button
               type="submit"
